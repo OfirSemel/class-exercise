@@ -25,10 +25,25 @@
       #div2 {
         background-color: pink;
       }
+
       #div3 {
         background-color: #ff6a00;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="div1" class="col-6 col-xs-6 col-sm-4 col-md-4 col-lg-8">d1</div>
+        <div id="div2" class="col-6 col-sm-4 col-md-8 col-lg-4 col-xl-4">
+          <div class="row">
+            <div id="div21" class="col- col-sm-5 col-xl-4">21</div>
+            <div id="div22" class="col-sm-7 col-xl-4">22</div>
+            <div id="div23" class="d-none d-xl-block col-xl-4">23</div>
+          </div>
+        </div>
+        <div id="div3" class="d-none d-sm-block col-sm-4 d-md-none">d3</div>
+      </div>
+    </div>
+  </body>
 </html>
